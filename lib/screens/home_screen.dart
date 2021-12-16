@@ -1,4 +1,5 @@
 import 'package:covid_19_ver_2/constants.dart';
+import 'package:covid_19_ver_2/screens/details_screen.dart';
 import 'package:covid_19_ver_2/widgets/info_card.dart';
 import 'package:covid_19_ver_2/widgets/preventiton_card.dart';
 import 'package:flutter/material.dart';
@@ -40,25 +41,61 @@ class HomeScreen extends StatelessWidget {
                     title: "Confirmed Cases",
                     iconColor: const Color(0xFFFF8C00),
                     effectedNum: 1062,
-                    press: () {},
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const DetailsScreen();
+                          },
+                        ),
+                      );
+                    },
                   ),
                   InfoCard(
                     title: "Total Deaths",
                     iconColor: const Color(0xFFFF2D55),
                     effectedNum: 75,
-                    press: () {},
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const DetailsScreen();
+                          },
+                        ),
+                      );
+                    },
                   ),
                   InfoCard(
                     title: "Total Recovered",
                     iconColor: const Color(0xFF50E3C2),
                     effectedNum: 689,
-                    press: () {},
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const DetailsScreen();
+                          },
+                        ),
+                      );
+                    },
                   ),
                   InfoCard(
                     title: "New Cases",
                     iconColor: const Color(0xFF5856D6),
                     effectedNum: 75,
-                    press: () {},
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const DetailsScreen();
+                          },
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
